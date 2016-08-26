@@ -27,10 +27,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
 
 
-  <!--
-  Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume!
-  -->
-<!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
+
+<script src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDa8O1i2hsSKH6D666wcVTFWZOxbdBz4-U"></script>
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -107,7 +105,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   course.
   -->
 
-  <script>
+
+    <script type="text/javascript">
     // Notice how all of a sudden there's JavaScript inside this HTML
     // document? You can write JavaScript between <script> tags. At the end of your
     // JavaScript, don't forget the closing script tag with the slash (/).
@@ -132,7 +131,7 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
       document.getElementById('workExperience').style.display = 'none';
     }
     if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.backgroundColor = "black";
+      document.getElementById('projects').style.backgroundColor = 'none';
     }
     if(document.getElementsByClassName('education-entry').length === 0) {
       document.getElementById('education').style.display = 'none';
@@ -140,10 +139,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
     if(document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('lets-connect').style.display = 'none';
     }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
-    }
+
   </script>
-    <div id="btn">Click For Skill</div>
+    
 </body>
 </html>

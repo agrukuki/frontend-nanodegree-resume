@@ -219,3 +219,6 @@ span {
     display: block;
   }
 }
+#topContacts a {
+    display: inline;
+}
